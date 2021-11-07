@@ -1,0 +1,55 @@
+html
+	box-sizing: border-box
+
+*,
+*::before,
+*::after
+	box-sizing: inherit
+
+body
+	margin: 0
+	font-family: "Leo"
+	font-weight: 400
+	color: $white
+	background-color: #fff
+
+	&.lock
+		overflow: hidden
+
+.site-container
+	overflow: hidden
+	min-height: 100%
+
+.container
+	margin: 0 auto
+	max-width: 1430px
+	padding: 0 15px
+
+img
+	max-width: 100%
+	object-fit: cover
+
+.link-reset
+	text-decoration: none
+	color: inherit
+
+.list-reset
+	margin: 0
+	padding: 0
+	list-style: none
+
+.btn-reset
+	padding: 0
+	border: none
+	color: inherit
+	background: transparent
+	cursor: pointer
+
+.is-hidden
+	display: none
+
+.error
+	border: 2px rgb(240, 100, 100) solid
+
+.js-focus-visible :focus:not(.focus-visible)
+	outline: none
