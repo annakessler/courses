@@ -32,3 +32,4 @@ $RECYCLE.BIN/
 node_modules
 .publish
 dist/
+.vscode
