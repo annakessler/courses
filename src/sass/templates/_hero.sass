@@ -9,17 +9,17 @@
 		height: 100%
 		display: flex
 		align-items: center
-		justify-content: space-around
+		justify-content: space-between
 
 	&__card
 		display: flex
 		flex-direction: column
-		max-width: 735px
-		padding: 30px
+		max-width: 700px
 		gap: 25px
 		color: $white
 
 	&__title
+		max-width: 500px
 		margin: 0
 		font-family: "Kazimir", sans-serif
 		+adaptive-font (52, 22)
@@ -28,6 +28,10 @@
 	&__subtitle
 		margin: 0
 		+adaptive-font (25, 18)
+
+	&__link
+		max-width: 200px
+		+adaptive-font (24, 18)
 
 	&__img
 
