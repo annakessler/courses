@@ -1,7 +1,7 @@
-<section class="form">
-	<div class="container">
-		<form action="telegram.php" method="POST">
-			<legend>Заголовок формы</legend>
+<section class="form" id="form">
+	<div class="container form__container">
+		<form class="form__box" action="telegram.php" method="POST">
+			<h3 class="title form__title">Записаться на марафон</h3>
 
 			<div class="form-group">
 				<input type="text" class="form-control" id="" name="name" placeholder="Введите имя">
@@ -12,10 +12,10 @@
 			</div>
 
 			<div class="form-group">
-				<textarea name="msg" placeholder="введите сообщение"></textarea>
+				<textarea class="form-text" name="msg" placeholder="Введите сообщение"></textarea>
 			</div>
 
-			<button type="submit" class="btn">Отправить форму</button>
+			<button type="submit" class="btn-reset btn">Отправить форму</button>
 		</form>
 	</div>
 </section>
