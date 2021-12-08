@@ -201,9 +201,9 @@ function watching() {
 function FtpDeploy() {
 
 	let conn = ftp.create({
-		host: '77.222.61.114',
-		user: 'kesslerann',
-		password: 'Master88%%',
+		host: '77.222.61.25',
+		user: 'mogilevkos',
+		password: 'Gfyfcjybr09',
 		parallel: 10,
 		log: gutil.log
 	});
@@ -216,8 +216,8 @@ function FtpDeploy() {
 			base: './dist',
 			buffer: false
 		})
-		.pipe(conn.newer('/test_workkess_ru/public_html'))
-		.pipe(conn.dest('/test_workkess_ru/public_html'));
+		.pipe(conn.newer('test_zayrexan_ru/public_html'))
+		.pipe(conn.dest('test_zayrexan_ru/public_html'));
 }
 
 exports.default = series(clean, html, css, img, imgWebp, svgSprites, js, resources, watching);
