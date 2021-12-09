@@ -31,7 +31,7 @@
 	display: block
 	width: 100%
 	padding: 20px 15px
-	background-color: $black
+	background-color: $accent-color
 	border: none
 	border: 2px solid $broom
 	border-radius: 5px
@@ -67,3 +67,29 @@
 		border: 2px $broom solid
 		color: $accent-color
 		background-color: $broom
+
+.date
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 250px
+
+	&__left
+		transform: rotate(350deg)
+
+	&__right
+		transform: rotate(10deg)
+
+	&__title
+		margin-bottom: 15px
+		color: $white
+		text-align: center
+		+adaptive-font (28, 18)
+
+	&__text
+		width: fit-content
+		border-bottom: 3px
+		border-bottom-style: dashed
+		color: $white
+		text-align: center
+		+adaptive-font (18, 16)

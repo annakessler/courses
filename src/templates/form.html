@@ -3,25 +3,48 @@
 
 		<h3 class="title form__title" id="form-title">Записаться на марафон</h3>
 
-		<form class="form__box" action="telegram.php" method="POST">
+		<div class="form__wrap">
 
-			<label class="form-group">
-				<span class="form-name">Ваше имя:</span>
-				<input type="text" class="form-control" id="" name="name" placeholder="Введите имя" required autocomplete="off">
-			</label>
-
-			<label class="form-group">
-				<span class="form-name">Ваш ник в telegram:</span>
-				<input type="text" class="form-control" id="" name="username" placeholder="Введите ник" required
-					autocomplete="off">
-			</label>
-
-			<div class="form-group">
-				<span class="form-name">Ваше сообщение или вопрос:</span>
-				<textarea class="form-text" name="msg" placeholder="Введите сообщение"></textarea>
+			<div class="date date__left">
+				<span class="date__title">
+					Дата старта:
+				</span>
+				<span class="date__text">
+					15 декабря
+				</span>
 			</div>
 
-			<button type="submit" class="btn-reset btn">Отправить форму</button>
-		</form>
+			<form class="form__box" action="telegram.php" method="POST">
+
+				<label class="form-group">
+					<span class="form-name">Ваше имя:</span>
+					<input type="text" class="form-control" id="" name="name" placeholder="Введите имя" required
+						autocomplete="off">
+				</label>
+
+				<label class="form-group">
+					<span class="form-name">Ваш ник в telegram:</span>
+					<input type="text" class="form-control" id="" name="username" placeholder="Введите ник" required
+						autocomplete="off">
+				</label>
+
+				<div class="form-group">
+					<span class="form-name">Ваше сообщение или вопрос:</span>
+					<textarea class="form-text" name="msg" placeholder="Введите сообщение"></textarea>
+				</div>
+
+				<button type="submit" class="btn-reset btn">Отправить форму</button>
+			</form>
+
+				<div class="date date__right">
+					<span class="date__title">
+						Длительность:
+					</span>
+					<span class="date__text">
+						10 дней
+					</span>
+				</div>
+		</div>
+
 	</div>
 </section>
