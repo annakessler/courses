@@ -1,2 +1,95 @@
 .title
 	font-family: "Kazimir", sans-serif
+	letter-spacing: 2px
+
+.link
+	display: inline-block
+	padding: 15px 20px
+	text-align: center
+	border: 2px $broom solid
+	background-color: $accent-color
+	color: $white
+	transition: all .2s
+	border-radius: 15px
+
+	&:hover
+		border: 2px $broom solid
+		color: $accent-color
+		background-color: $broom
+
+.form-group
+	width: 100%
+	margin-bottom: 20px
+
+.form-name
+	display: inline-block
+	margin-bottom: 20px
+	+adaptive-font (18, 16)
+	color: $broom
+
+.form-control
+	display: block
+	width: 100%
+	padding: 20px 15px
+	background-color: $accent-color
+	border: none
+	border: 2px solid $broom
+	border-radius: 5px
+	color: $white
+
+	&::placeholder
+		color: #ffffff75
+
+	&:focus
+		color: $white
+		background-color: $black
+		border-color: $broom
+		outline: 0
+		box-shadow: 0px 0px 15px 5px rgba($broom, 0.445)
+		transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out
+
+.form-text
+	@extend .form-control
+	resize: none
+	width: 100%
+	min-height: 150px
+
+.btn
+	width: 100%
+	padding: 15px 20px
+	border: 2px $broom solid
+	background-color: $accent-color
+	color: $white
+	transition: all .2s
+	border-radius: 5px
+
+	&:hover
+		border: 2px $broom solid
+		color: $accent-color
+		background-color: $broom
+
+.date
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 250px
+
+	&__left
+		transform: rotate(350deg)
+
+	&__right
+		transform: rotate(10deg)
+
+	&__title
+		margin-bottom: 15px
+		color: $white
+		text-align: center
+		+adaptive-font (28, 18)
+
+	&__text
+		width: fit-content
+		border-bottom: 3px
+		border-bottom-style: dashed
+		color: $white
+		text-align: center
+		+adaptive-font (18, 16)

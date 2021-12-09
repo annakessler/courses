@@ -9,17 +9,17 @@
 		height: 100%
 		display: flex
 		align-items: center
-		justify-content: space-around
+		justify-content: space-between
 
 	&__card
 		display: flex
 		flex-direction: column
-		max-width: 735px
-		padding: 30px
+		max-width: 700px
 		gap: 25px
 		color: $white
 
 	&__title
+		max-width: 550px
 		margin: 0
 		font-family: "Kazimir", sans-serif
 		+adaptive-font (52, 22)
@@ -30,21 +30,8 @@
 		+adaptive-font (25, 18)
 
 	&__link
-		display: inline-block
 		max-width: 200px
-		padding: 15px 20px
-		text-align: center
-		border: 2px $broom solid
-		background-color: $accent-color
-		color: $white
-		transition: all .2s
-		border-radius: 15px
-		font-size: 28px
-
-		&:hover
-			border: 2px $broom solid
-			color: $accent-color
-			background-color: $broom
+		+adaptive-font (24, 18)
 
 	&__img
 

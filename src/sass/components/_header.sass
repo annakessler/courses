@@ -46,8 +46,9 @@
 
 	&__link
 		position: relative
-		color: $white
+		color: $broom
 		font-size: 18px
+		transition: color .2s
 
 		&::after
 			position: absolute
@@ -64,8 +65,11 @@
 
 	&__link
 		&:hover
+			color: $white
+
 			&::after
 				width: 100%
+				color: $white
 				opacity: 1
 				visibility: visible
 

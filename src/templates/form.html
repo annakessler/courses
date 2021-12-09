@@ -1,25 +1,50 @@
-<section class="form">
-	<div class="container">
-		<form action="telegram.php" method="POST">
-			<legend>Заголовок формы</legend>
+<section class="form" id="form">
+	<div class="container form__container">
 
-			<div class="form-group">
-				<input type="text" class="form-control" id="" name="name" placeholder="Введите имя">
+		<h3 class="title form__title" id="form-title">Записаться на марафон</h3>
+
+		<div class="form__wrap">
+
+			<div class="date date__left">
+				<span class="date__title">
+					Дата старта:
+				</span>
+				<span class="date__text">
+					15 декабря
+				</span>
 			</div>
 
-			<div class="form-group">
-				<input type="text" class="form-control" id="" name="phone" placeholder="Введите телефон">
-			</div>
+			<form class="form__box" action="telegram.php" method="POST">
 
-			<div class="form-group">
-				<input type="text" class="form-control" id="" name="email" placeholder="Введите email">
-			</div>
+				<label class="form-group">
+					<span class="form-name">Ваше имя:</span>
+					<input type="text" class="form-control" id="" name="name" placeholder="Введите имя" required
+						autocomplete="off">
+				</label>
 
-			<div class="form-group">
-				<textarea name="msg" placeholder="введите сообщение"></textarea>
-			</div>
+				<label class="form-group">
+					<span class="form-name">Ваш ник в telegram:</span>
+					<input type="text" class="form-control" id="" name="username" placeholder="Введите ник" required
+						autocomplete="off">
+				</label>
 
-			<button type="submit" class="btn">Отправить форму</button>
-		</form>
+				<div class="form-group">
+					<span class="form-name">Ваше сообщение или вопрос:</span>
+					<textarea class="form-text" name="msg" placeholder="Введите сообщение"></textarea>
+				</div>
+
+				<button type="submit" class="btn-reset btn">Отправить форму</button>
+			</form>
+
+				<div class="date date__right">
+					<span class="date__title">
+						Длительность:
+					</span>
+					<span class="date__text">
+						10 дней
+					</span>
+				</div>
+		</div>
+
 	</div>
 </section>
