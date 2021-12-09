@@ -33,3 +33,7 @@ node_modules
 .publish
 dist/
 .vscode
+.editorconfig
+gulpfile.js
+package-lock.json
+package.json
