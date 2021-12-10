@@ -1,4 +1,3 @@
-	function change() {
-		let telegram = document.querySelector(".form-telegram");
-		telegram.value = "@";
-	}
+let inputs = document.querySelectorAll('#username');
+let im = new Inputmask('@*{0,}');
+im.mask(inputs);
