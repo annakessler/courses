@@ -19,18 +19,18 @@
 				<label class="form-group">
 					<span class="form-name">Ваше имя:</span>
 					<input type="text" class="form-control" id="" name="name" placeholder="Введите имя" required
-						autocomplete="off">
+						autocomplete="off" maxlength="15" minlength="2">
 				</label>
 
 				<label class="form-group">
 					<span class="form-name">Ваш ник в telegram:</span>
-					<input type="text" class="form-control form-telegram" id="" name="username" onclick="change()"
-						placeholder="Введите ник" required autocomplete="off">
+					<input type="text" class="form-control form-telegram" id="username" name="username" placeholder="Введите ник"
+						required autocomplete="off" maxlength="33">
 				</label>
 
 				<div class="form-group">
 					<span class="form-name">Ваше сообщение или вопрос:</span>
-					<textarea class="form-text" name="msg" placeholder="Введите сообщение"></textarea>
+					<textarea class="form-text" name="msg" placeholder="Введите сообщение" maxlength="500"></textarea>
 				</div>
 
 				<button type="submit" onclick="AtSign()" class=" btn-reset btn">Отправить форму</button>
