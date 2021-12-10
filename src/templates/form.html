@@ -33,7 +33,7 @@
 					<textarea class="form-text" name="msg" placeholder="Введите сообщение"></textarea>
 				</div>
 
-				<button type="submit" onclick="fun()" class=" btn-reset btn">Отправить форму</button>
+				<button type="submit" onclick="AtSign()" class=" btn-reset btn">Отправить форму</button>
 			</form>
 
 			<div class="date date__right">
@@ -46,16 +46,4 @@
 			</div>
 		</div>
 	</div>
-	<input type="button" onclick="fun()">
 </section>
-
-<script>
-
-	function fun() {
-		let nickname = document.querySelector(".form-telegram");
-		let value = nickname.value;
-
-		nickname.value = '@' + value;
-	}
-
-</script>
