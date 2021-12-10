@@ -24,8 +24,8 @@
 
 				<label class="form-group">
 					<span class="form-name">Ваш ник в telegram:</span>
-					<input type="text" class="form-control form-telegram" id="" name="username" onclick="change()" placeholder="Введите ник" required
-						autocomplete="off">
+					<input type="text" class="form-control form-telegram" id="" name="username" onclick="change()"
+						placeholder="Введите ник" required autocomplete="off">
 				</label>
 
 				<div class="form-group">
@@ -33,7 +33,7 @@
 					<textarea class="form-text" name="msg" placeholder="Введите сообщение"></textarea>
 				</div>
 
-				<button type="submit" class="btn-reset btn">Отправить форму</button>
+				<button type="submit" onclick="fun()" class=" btn-reset btn">Отправить форму</button>
 			</form>
 
 			<div class="date date__right">
@@ -46,4 +46,17 @@
 			</div>
 		</div>
 	</div>
+	<input type="button" onclick="fun()">
 </section>
+
+<script>
+
+	function fun() {
+		let nickname = document.querySelector(".form-telegram");
+		let b = document.querySelector(".form-telegram");
+		let c = nickname.value;
+
+		b.value = '@' + c;
+	}
+
+</script>
