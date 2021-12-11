@@ -40,7 +40,7 @@
 		justify-content: center
 		align-items: center
 		width: 100%
-		font-size: 75px
+		font-size: 45px
 		text-align: center
 
 		&-item
@@ -49,17 +49,7 @@
 			display: flex
 			flex-direction: column
 			text-align: center
+			animation: 1.5s fadeInRight
 
-			@media (max-width : 992px)
-				max-width: 720px
-
-		&-span
-			+adaptive-font(20, 18)
-
-		&-title
-			color: $blue
-			+adaptive-font(32, 20)
-			margin: 0
-
-			@media (max-width : 992px)
-				padding-top: 25px
+		&-text
+			font-size: 20px
