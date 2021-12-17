@@ -1,16 +1,7 @@
 .form
 	padding: 100px 0
 
-	&__container
-		display: flex
-		flex-direction: column
-		align-items: center
-		justify-content: center
-
 	&__wrap
-		display: flex
-		align-items: center
-		justify-content: space-evenly
 		width: 100%
 
 	&__box
@@ -18,10 +9,17 @@
 		flex-direction: column
 		align-items: center
 		justify-content: center
-		width: 340px
 
-	&__title
-		margin: 0
-		margin-bottom: 10px
-		padding: 50px 0
-		+adaptive-font (28, 18)
+.wrap
+	width: 100%
+
+	&__form-group
+		display: flex
+		align-items: center
+		justify-content: space-between
+		gap: 30px
+		width: 100%
+
+		@media (max-width : 480px)
+			flex-direction: column
+			gap: 0

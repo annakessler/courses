@@ -2,6 +2,7 @@
 	font-family: "Kazimir", sans-serif
 	letter-spacing: 2px
 	margin: 0
+	padding: 50px 0
 	color: $broom
 	+adaptive-font(25, 18)
 
@@ -61,8 +62,9 @@
 	min-height: 150px
 
 .btn
-	width: 100%
-	padding: 15px 20px
+	margin-right: auto
+	padding: 20px 60px
+	width: 300px
 	border: 2px $broom solid
 	background-color: $accent-color
 	color: $white
@@ -74,28 +76,5 @@
 		color: $accent-color
 		background-color: $broom
 
-.date
-	display: flex
-	flex-direction: column
-	align-items: center
-	width: 250px
-
-	&__left
-		transform: rotate(350deg)
-
-	&__right
-		transform: rotate(10deg)
-
-	&__title
-		margin-bottom: 15px
-		color: $white
-		text-align: center
-		+adaptive-font (28, 18)
-
-	&__text
-		width: fit-content
-		border-bottom: 3px
-		border-bottom-style: dashed
-		color: $white
-		text-align: center
-		+adaptive-font (18, 16)
+	@media (max-width : 768px)
+		width: 100%
