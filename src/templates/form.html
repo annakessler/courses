@@ -1,32 +1,25 @@
 <section class="form" id="form">
-	<div class="container form__container">
+	<div class="container">
 
-		<h3 class="title form__title" id="form-title">Записаться на марафон</h3>
+		<h2 class="title" id="form-title">Записаться на марафон</h2>
 
 		<div class="form__wrap">
 
-			<div class="date date__left">
-				<span class="date__title">
-					Дата старта:
-				</span>
-				<span class="date__text">
-					15 декабря
-				</span>
-			</div>
-
 			<form class="form__box" action="telegram.php" method="POST">
 
-				<label class="form-group">
-					<span class="form-name">Ваше имя:</span>
-					<input type="text" class="form-control" id="" name="name" placeholder="Введите имя" required
-						autocomplete="off" maxlength="15" minlength="2">
-				</label>
+				<div class="wrap__form-group">
+					<div class="form-group">
+						<span class="form-name">Ваше имя:</span>
+						<input type="text" class="form-control" id="" name="name" placeholder="Введите имя" required
+							autocomplete="off" maxlength="15" minlength="2">
+					</div>
 
-				<label class="form-group">
-					<span class="form-name">Ваш ник в telegram:</span>
-					<input type="text" class="form-control form-telegram" id="username" name="username" placeholder="Введите ник"
-						required autocomplete="off" maxlength="33">
-				</label>
+					<div class="form-group">
+						<span class="form-name">Ваш ник в telegram:</span>
+						<input type="text" class="form-control form-telegram" id="username" name="username"
+							placeholder="Введите ник" required autocomplete="off" maxlength="33">
+					</div>
+				</div>
 
 				<div class="form-group">
 					<span class="form-name">Ваше сообщение или вопрос:</span>
@@ -36,14 +29,6 @@
 				<button type="submit" onclick="AtSign()" class=" btn-reset btn">Отправить форму</button>
 			</form>
 
-			<div class="date date__right">
-				<span class="date__title">
-					Длительность:
-				</span>
-				<span class="date__text">
-					10 дней
-				</span>
-			</div>
 		</div>
 	</div>
 </section>
