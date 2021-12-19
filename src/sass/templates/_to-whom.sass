@@ -1,0 +1,39 @@
+.to-whom
+	padding: 80px 0
+
+	&__wrap
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		width: 100%
+		gap: 30px
+
+		@media (max-width : 1200px)
+			flex-wrap: wrap-reverse
+			justify-content: space-around
+			align-items: center
+
+	&__text
+		max-width: 350px
+		margin-bottom: 20px
+		text-align: center
+		color: #ffffff
+
+	&__icon
+		margin-bottom: 30px
+		width: 100px
+		height: 100px
+		fill: $broom
+
+		@media (max-width : 480px)
+			margin-bottom: 15px
+
+	&__title
+		margin: 0
+		margin-bottom: 15px
+		+adaptive-font(23, 20)
+
+	&__descr
+		margin: 0
+		+adaptive-font(18, 16)
+		opacity: .85
