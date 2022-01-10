@@ -1,0 +1,52 @@
+.how
+
+	&__wrap
+		display: flex
+		justify-content: space-between
+		position: relative
+		height: 190px
+		width: 100%
+
+		&::after
+			position: absolute
+			left: 0
+			top: 50%
+			content: ''
+			height: 2px
+			width: 100%
+			border: 1px solid $broom
+			z-index: 5
+
+	&__title
+		margin: 0
+
+	&__text
+		color: $white
+
+	&__inner
+		max-width: 100px
+		text-align: center
+		display: flex
+		position: relative
+
+		&:nth-child(even)
+			align-items: flex-end
+
+		&::after
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translateY(-50%)
+			border-radius: 50%
+			content: ''
+			height: 25px
+			width: 25px
+			border: 1px solid $broom
+
+	&__number
+		color: red
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 10
