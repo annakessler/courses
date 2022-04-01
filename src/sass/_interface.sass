@@ -2,6 +2,7 @@
 	font-family: "Kazimir", sans-serif
 	letter-spacing: 2px
 	margin: 0
+	margin-bottom: 50px
 	padding: 50px 0
 	color: $broom
 	+adaptive-font(25, 18)
@@ -9,20 +10,24 @@
 	@media (max-width : 768px)
 		text-align: center
 
+	@media (max-width : 480px)
+		margin-bottom: 30px
+		padding: 20px 0
+
 .link
 	display: inline-block
 	padding: 15px 20px
 	text-align: center
 	border: 2px $broom solid
-	background-color: $accent-color
-	color: $white
+	background-color: $broom
+	color: $black
 	transition: all .2s
 	border-radius: 15px
 
 	&:hover
 		border: 2px $broom solid
-		color: $accent-color
-		background-color: $broom
+		color: $white
+		background-color: transparent
 
 .form-group
 	width: 100%
