@@ -18,15 +18,15 @@
 		display: flex
 		flex-direction: column
 		max-width: 700px
-		gap: 25px
 		color: $white
 
 		@media	(max-width : 768px)
 			align-items: center
 
 	&__title
-		max-width: 550px
+		max-width: 700px
 		margin: 0
+		margin-bottom: 15px
 		font-family: "Kazimir", sans-serif
 		+adaptive-font (52, 30)
 		color: $broom
@@ -36,14 +36,15 @@
 
 	&__subtitle
 		margin: 0
-		+adaptive-font (25, 16)
+		margin-bottom: 25px
+		+adaptive-font (20, 16)
 
 		@media	(max-width : 768px)
 			text-align: center
 
 	&__link
-		max-width: 200px
-		+adaptive-font (24, 18)
+		max-width: 300px
+		+adaptive-font (21, 18)
 
 	&__img
 
