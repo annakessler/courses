@@ -29,10 +29,17 @@
 		display: flex
 		position: relative
 
+		&:hover
+
+			&::after
+				border: 1px solid $white
+				background-color: $white
+
 		&:nth-child(even)
 			align-items: flex-end
 
 		&::after
+			z-index: 10
 			position: absolute
 			left: 50%
 			top: 50%
@@ -42,3 +49,4 @@
 			height: 25px
 			width: 25px
 			border: 1px solid $broom
+			background-color: $broom
