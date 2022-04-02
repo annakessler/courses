@@ -21,9 +21,13 @@
 		margin: 0
 
 	&__text
+		display: flex
 		color: $white
+		transition: all .3s
+		+adaptive-font (15, 11)
 
 	&__inner
+		justify-content: center
 		max-width: 100px
 		text-align: center
 		display: flex
@@ -35,6 +39,9 @@
 				border: 1px solid $white
 				background-color: $white
 
+		&:hover .how__text
+			+adaptive-font (17, 13)
+
 		&:nth-child(even)
 			align-items: flex-end
 
@@ -43,7 +50,7 @@
 			position: absolute
 			left: 50%
 			top: 50%
-			transform: translateY(-50%)
+			transform: translate(-50%, -50%)
 			border-radius: 50%
 			content: ''
 			height: 25px
