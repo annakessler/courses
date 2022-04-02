@@ -9,7 +9,6 @@
 		align-items: flex-start
 		justify-content: space-between
 		width: 100%
-		gap: 50px
 		flex-direction: column
 
 		@media (max-width : 1200px)
@@ -19,12 +18,16 @@
 
 	&__text
 		max-width: 100%
-		margin-bottom: 20px
+		margin-bottom: 50px
 		text-align: center
 		color: #ffffff
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
+
+		@media	(max-width : 370px)
+			flex-direction: column
+			margin-bottom: 20px
 
 	&__icon
 		margin-right: 100px
@@ -32,7 +35,11 @@
 		height: 100px
 		fill: $broom
 
-		@media (max-width : 480px)
+		@media	(max-width : 768px)
+			margin-right: 50px
+
+		@media	(max-width : 370px)
+			margin: 0 auto
 			margin-bottom: 15px
 
 	&__inner
@@ -50,14 +57,26 @@
 			background-color: $broom
 			transform: translateY(-50%)
 
+			@media	(max-width : 768px)
+				left: -25px
+
+			@media	(max-width : 480px)
+				display: none
+
 	&__title
 		margin: 0
 		margin-bottom: 15px
 		+adaptive-font(23, 20)
 		text-align: start
 
+		@media	(max-width : 370px)
+				text-align: center
+
 	&__descr
 		margin: 0
 		+adaptive-font(18, 16)
 		opacity: .85
 		text-align: start
+
+		@media	(max-width : 370px)
+				text-align: center
