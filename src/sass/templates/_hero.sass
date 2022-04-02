@@ -3,13 +3,15 @@
 	background-color: $accent-color
 
 	&__container
+		display: flex
+		flex-direction: column
 		height: 100%
 
 	&__wrap
-		height: 100%
 		display: flex
 		align-items: center
 		justify-content: space-between
+		margin-bottom: 50px
 
 		@media	(max-width : 768px)
 			justify-content: center
@@ -25,7 +27,7 @@
 
 	&__title
 		margin: 0
-		margin-bottom: 15px
+		margin-bottom: 40px
 		font-family: "Kazimir", sans-serif
 		+adaptive-font (52, 30)
 		color: $broom
@@ -35,7 +37,7 @@
 
 	&__subtitle
 		margin: 0
-		margin-bottom: 25px
+		margin-bottom: 50px
 		+adaptive-font (20, 16)
 
 		@media	(max-width : 768px)
@@ -56,3 +58,41 @@
 
 			@media	(max-width : 768px)
 				display: none
+
+	&-info
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		&__wrap
+			position: relative
+
+			&::after
+				position: absolute
+				content: ''
+				top: -15px
+				left: 0
+				height: 2px
+				width: 100%
+				background-color: $broom
+
+			&::before
+				position: absolute
+				content: ''
+				top: 0
+				bottom: 0
+				left: -15px
+				height: 100%
+				width: 2px
+				background-color: $broom
+
+		&__title
+			margin: 0
+			margin-bottom: 10px
+			+adaptive-font (20, 16)
+			color: $broom
+
+		&__descr
+			margin: 0
+			+adaptive-font (40, 16)
+			color: $white
