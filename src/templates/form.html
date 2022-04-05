@@ -1,13 +1,42 @@
 <section class="form" id="form">
 	<div class="container">
 
-		<h2 class="form__title title" id="form-title">Записаться на марафон</h2>
+		<h2 class="form__title title" id="form-title">Запишитесь на марафон</h2>
 
 		<div class="form__wrap">
+			<div class="price">
+				<h3 class="price__title">
+					Стоимость курса
+				</h3>
 
-			<form class="form__box" action="telegram.php" method="POST">
 
-				<div class="wrap__form-group">
+				<div class="price__wrap">
+					<div class="price__inner">
+						<p class="price__descr price-sale">
+							Старая цена -
+							<span class="price__descr--accent price__descr--line">5000p.</span>
+						</p>
+						<p class="price__descr price__descr--big">
+							Цена со скидкой -
+							<span class="price__descr--accent">3000p.</span>
+						</p>
+					</div>
+
+					<div class="price__inner">
+						<p class="price__limit">
+							Скидка действует до 4 апреля
+						</p>
+						<p class="price__limit">
+							Количество мест ограничено
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<form class="form__inner" action="telegram.php" method="POST">
+
+				<div class="inner__form-group">
 					<div class="form-group">
 						<span class="form-name">Ваше имя:</span>
 						<input type="text" class="form-control" id="" name="name" placeholder="Введите имя" required
@@ -26,9 +55,9 @@
 					<textarea class="form-text" name="msg" placeholder="Введите сообщение" maxlength="500"></textarea>
 				</div>
 
-				<button type="submit" onclick="AtSign()" class=" btn-reset btn">Отправить форму</button>
+				<button type="submit" onclick="AtSign()" class=" btn-reset btn btn__form">Отправить форму</button>
 			</form>
-
 		</div>
 	</div>
+
 </section>

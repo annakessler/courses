@@ -1,20 +1,16 @@
 .form
 	padding: 100px 0
-
 	@media (max-width : 480px)
 		padding: 20px 0
 
-	&__wrap
-		width: 100%
-
-	&__box
+	&__container
 		display: flex
-		flex-direction: column
-		align-items: center
-		justify-content: center
 
-.wrap
-	width: 100%
+	&__wrap
+		display: flex
+		justify-content: space-between
+
+.inner
 
 	&__form-group
 		display: flex
@@ -26,3 +22,42 @@
 		@media (max-width : 480px)
 			flex-direction: column
 			gap: 0
+
+.price
+	display: flex
+	flex-direction: column
+
+	&__wrap
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+
+	&__title
+		margin: 0
+		margin-bottom: 50px
+		+adaptive-font(35, 16)
+
+	&__limit
+		margin: 0
+		margin-bottom: 5px
+		+adaptive-font(20, 16)
+		font-style: italic
+
+	&__descr
+		margin: 0
+		margin-bottom: 20px
+		+adaptive-font(30, 16)
+		color: $white
+
+		&:last-child
+			margin: 0
+
+		&--big
+			+adaptive-font(34, 16)
+
+		&--accent
+			color: $broom
+
+		&--line
+			text-decoration: line-through

@@ -4,7 +4,8 @@
 	margin: 0
 	margin-bottom: 50px
 	color: $broom
-	+adaptive-font(25, 18)
+	+adaptive-font(35, 18)
+	max-width: 650px
 
 	@media (max-width : 768px)
 		text-align: center
@@ -79,6 +80,9 @@
 		border: 2px $broom solid
 		color: $accent-color
 		background-color: $broom
+
+	&__form
+		width: 100%
 
 	@media (max-width : 768px)
 		width: 100%

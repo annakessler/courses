@@ -1,59 +1,81 @@
 .how
 
-	&__wrap
+	&-box
+		position: relative
+		min-height: 200px
 		display: flex
 		justify-content: space-between
-		position: relative
-		height: 190px
-		width: 100%
+		@media (max-width: 810px)
+			flex-direction: column
 
 		&::after
 			position: absolute
-			left: 0
+			content: ""
 			top: 50%
-			content: ''
-			height: 2px
+			transform: translateY(-50%)
+			right: 0
+			left: 0
 			width: 100%
-			border: 1px solid $broom
-			z-index: 5
+			height: 2px
+			background-color: $broom
+			@media (max-width: 810px)
+				display: none
 
-	&__title
-		margin: 0
-
-	&__text
-		display: flex
-		color: $white
-		transition: all .3s
-		+adaptive-font (15, 11)
-
-	&__inner
-		justify-content: center
-		max-width: 100px
-		text-align: center
-		display: flex
+	&__wrap
 		position: relative
-
-		&:hover
-
-			&::after
-				border: 1px solid $white
-				background-color: $white
-
-		&:hover .how__text
-			+adaptive-font (17, 13)
+		display: flex
+		align-items: start
+		justify-content: center
+		width: 25%
+		@media (max-width: 810px)
+			width: 100%
+			justify-content: start
 
 		&:nth-child(even)
-			align-items: flex-end
+			align-items: end
+
+	&__text
+		margin: 0
+		max-width: 300px
+		text-align: center
+		+adaptive-font (20, 18)
+		color: $white
+		transition: all .5s
+		@media (max-width: 810px)
+			padding-left: 20px
+			text-align: left
+			max-width: 100%
 
 		&::after
-			z-index: 10
+			z-index: 5
 			position: absolute
-			left: 50%
-			top: 50%
-			transform: translate(-50%, -50%)
-			border-radius: 50%
-			content: ''
-			height: 25px
+			content: ""
 			width: 25px
-			border: 1px solid $broom
+			height: 25px
+			border-radius: 50%
 			background-color: $broom
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			transition: all .5s
+			@media (max-width: 810px)
+				width: 15px
+				height: 15px
+				left: 0
+
+		&:hover
+			+adaptive-font (22, 20)
+			color: $white
+
+			&::after
+				background-color: $white
+				width: 30px
+				height: 30px
+				@media (max-width: 810px)
+					width: 15px
+					height: 15px
+					background-color: $broom
+
+			@media (max-width: 810px)
+				+adaptive-font (20, 18)
+				color: $white
