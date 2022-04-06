@@ -61,3 +61,28 @@
 
 		&--line
 			text-decoration: line-through
+
+.info
+	max-width: 260px
+	display: flex
+	flex-direction: column
+
+	&__wrap
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+
+	&__title
+		margin: 0
+		margin-bottom: 50px
+		+adaptive-font(35, 16)
+
+	&__descr
+		margin: 0
+		margin-bottom: 20px
+		+adaptive-font(30, 16)
+		color: $white
+
+		&--accent
+			color: $broom
