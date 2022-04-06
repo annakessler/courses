@@ -1,17 +1,19 @@
 .hero
-	height: 100vh
+	height: calc( 100vh - 105px )
 	background-color: $accent-color
 
 	&__container
 		display: flex
 		flex-direction: column
 		height: 100%
+		justify-content: space-around
+		@media	(max-width : 440px)
+			justify-content: space-evenly
 
 	&__wrap
 		display: flex
 		align-items: center
 		justify-content: space-between
-		margin-bottom: 50px
 
 		@media	(max-width : 768px)
 			justify-content: center
@@ -29,7 +31,7 @@
 		margin: 0
 		margin-bottom: 40px
 		font-family: "Kazimir", sans-serif
-		+adaptive-font (52, 30)
+		+adaptive-font (52, 32)
 		color: $broom
 
 		@media	(max-width : 768px)
@@ -38,7 +40,7 @@
 	&__subtitle
 		margin: 0
 		margin-bottom: 50px
-		+adaptive-font (20, 16)
+		+adaptive-font (20, 18)
 
 		@media	(max-width : 768px)
 			text-align: center
@@ -58,41 +60,3 @@
 
 			@media	(max-width : 768px)
 				display: none
-
-	&-info
-		display: flex
-		align-items: center
-		justify-content: space-between
-
-		&__wrap
-			position: relative
-
-			&::after
-				position: absolute
-				content: ''
-				top: -15px
-				left: 0
-				height: 2px
-				width: 100%
-				background-color: $broom
-
-			&::before
-				position: absolute
-				content: ''
-				top: 0
-				bottom: 0
-				left: -15px
-				height: 100%
-				width: 2px
-				background-color: $broom
-
-		&__title
-			margin: 0
-			margin-bottom: 10px
-			+adaptive-font (18, 16)
-			color: $broom
-
-		&__descr
-			margin: 0
-			+adaptive-font (35, 16)
-			color: $white
