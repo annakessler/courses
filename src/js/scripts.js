@@ -6,3 +6,4 @@
 @include('functions/header.js');
 @include('functions/spollers.js');
 @include('functions/tabs.js');
+@include('functions/politics.js');

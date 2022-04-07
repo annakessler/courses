@@ -1,0 +1,40 @@
+.checkbox__item
+	cursor: pointer
+	display: flex
+	align-items: center
+	margin-right: 30px
+
+	.checkbox__input
+		display: none
+
+		&:checked+.fake::before
+			opacity: 1
+
+		&:checked+.fake
+			background-color: $accent-color
+			border: 2px solid $broom
+
+	.fake
+		height: 18px
+		width: 18px
+		box-sizing: border-box
+		border: 2px solid $broom
+		border-radius: 2px
+		display: block
+		margin-right: 8px
+		position: relative
+
+		&::before
+			content: ''
+			position: absolute
+			display: block
+			height: 18px
+			width: 8px
+			border-bottom: 2px solid $white
+			border-right: 2px solid $white
+			top: -6px
+			box-sizing: border-box
+			left: 5px
+			transform: rotate(35deg)
+			opacity: 0
+			transition: .3s all ease
