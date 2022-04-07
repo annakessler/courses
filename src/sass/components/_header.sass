@@ -1,6 +1,8 @@
 .header
+	position: absolute
+	left: 0
+	right: 0
 	width: 100%
-	background-color: #222222
 
 	&.fixed
 		z-index: 10
@@ -16,6 +18,7 @@
 		align-items: center
 		justify-content: space-between
 		min-height: 70px
+		width: 100%
 
 	&__logo
 		z-index: 5
@@ -65,6 +68,9 @@
 			opacity: 0
 			visibility: hidden
 			transition: width .5s
+
+		&--black
+			color: $black
 
 	&__link
 		&:hover
