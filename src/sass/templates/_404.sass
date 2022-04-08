@@ -1,0 +1,44 @@
+.not-found
+
+	&__wrap
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		height: calc( 100vh - 105px )
+
+	&__title
+		margin: 0
+		margin-bottom: 30px
+		+adaptive-font(90, 50)
+		text-transform: uppercase
+		color: $broom
+		animation: 3s neon-2 alternate-reverse infinite
+
+	&__subtitle
+		margin: 0
+		margin-bottom: 40px
+		+adaptive-font(24, 14)
+		color: $white
+
+	&__link
+		padding: 15px 20px
+		max-width: max-content
+		+adaptive-font (22, 20)
+		@media	(max-width : 480px)
+			max-width: 100%
+			width: 100%
+
+@keyframes neon-2
+	from
+		text-shadow: 0 0 5px $broom
+		text-shadow: 0 0 10px $broom
+		text-shadow: 0 0 15px $broom
+		text-shadow: 0 0 20px $broom
+
+	to
+		text-shadow: 0 0 20px $broom
+		text-shadow: 0 0 35px $broom
+		text-shadow: 0 0 40px $broom
+		text-shadow: 0 0 50px $broom
+		text-shadow: 0 0 800px $broom
