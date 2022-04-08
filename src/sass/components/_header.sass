@@ -55,6 +55,7 @@
 		color: $broom
 		font-size: 18px
 		transition: color .2s
+		transition: background-color .2s
 
 		&::after
 			position: absolute
@@ -71,6 +72,9 @@
 
 		&--black
 			color: $black
+			&:hover
+				&::after
+					display: none
 
 	&__link
 		&:hover
