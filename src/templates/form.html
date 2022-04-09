@@ -25,10 +25,10 @@
 
 					<div class="info__inner">
 						<p class="info__limit">
-							Скидка действует <span class="info__limit--accent">до 25 апреля</span>
+							Скидка действует <span class="info__limit info__limit--accent">до 25 апреля</span>
 						</p>
 						<p class="info__limit">
-							Количество мест <span class="info__limit--accent">ограничено</span>
+							Количество мест <span class="info__limit info__limit--accent">ограничено</span>
 						</p>
 					</div>
 				</div>
@@ -36,12 +36,12 @@
 			</div>
 
 
-			<form class="form__inner" action="telegram.php" method="POST">
+			<form class="form-inner" action="telegram.php" method="POST">
 
-				<div class="inner__form-group">
+				<div class="form-inner__form-group">
 					<div class="form-group">
 						<span class="form-name">Ваше имя:</span>
-						<input type="text" class="form-control" id="" name="name" placeholder="Введите имя" required
+						<input type="text" class="form-control" id="name" name="name" placeholder="Введите имя" required
 							autocomplete="off" maxlength="15" minlength="2">
 					</div>
 
@@ -57,17 +57,19 @@
 					<textarea class="form-text" name="msg" placeholder="Введите сообщение" maxlength="500"></textarea>
 				</div>
 
-				<button type="submit" onclick="AtSign()" class=" btn-reset btn btn__form" name="submit" disabled="">Отправить
+				<button type="submit" onclick="AtSign()" class=" btn-reset btn btn--form" name="submit" disabled="">Отправить
 					форму</button>
 
-				<label class="checkbox__item">
-					<input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off" class="checkbox__input">
-					<span class="fake"></span>
-					<span class="checkbox__text">Я даю согласие на
-						<a class="link-reset checkbox__link" href="https://infocoder/politics.html" target="blank">обработку
-							персональных
-							данных.</a></span>
-				</label>
+				<div class="checkbox">
+					<label class="checkbox__item">
+						<input type="checkbox" id="politics" onclick="check();" value="" class="checkbox__input">
+						<span class="fake"></span>
+						<span class="checkbox__text">Я даю согласие на
+							<a class="link-reset checkbox__link" href="politics.html" target="_blank">обработку
+								персональных
+								данных.</a></span>
+					</label>
+				</div>
 
 
 			</form>
