@@ -11,9 +11,23 @@
 		margin: 0
 		margin-bottom: 50px
 		+adaptive-font (54, 18)
-		animation: tada
-		animation-duration: 1s
+		max-width: 100%
+		animation: 3s neon-2 alternate-reverse infinite
 
 	&__link
 		max-width: 300px
 		+adaptive-font (24, 18)
+
+@keyframes neon-2
+	from
+		text-shadow: 0 0 5px $broom
+		text-shadow: 0 0 10px $broom
+		text-shadow: 0 0 15px $broom
+		text-shadow: 0 0 20px $broom
+
+	to
+		text-shadow: 0 0 20px $broom
+		text-shadow: 0 0 35px $broom
+		text-shadow: 0 0 40px $broom
+		text-shadow: 0 0 50px $broom
+		text-shadow: 0 0 800px $broom
