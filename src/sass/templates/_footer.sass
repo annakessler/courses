@@ -4,18 +4,31 @@
 	&__container
 		width: 100%
 		min-height: max-content
-		padding: 20px 0
+		padding: 20px 15px
 
 	&__wrap
 		display: flex
 		align-items: flex-end
 		justify-content: space-between
+		@media (max-width: 992px)
+			flex-direction: column-reverse
+			align-items: center
+
+	&__logo
+		@media (max-width: 992px)
+			margin-bottom: 15px
 
 	&__info
 		min-width: 260px
 		+adaptive-font(16, 16)
+		@media (max-width: 992px)
+			text-align: center
 
 	&__link
+		text-align: right
 		transition: opacity .3s
 		&:hover
 			opacity: 0.85
+		@media (max-width: 992px)
+			text-align: center
+			margin-bottom: 15px
