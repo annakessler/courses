@@ -4,6 +4,6 @@
 @include('functions/header.js');
 @include('functions/tabs.js');
 @include('functions/spollers.js');
-@include('functions/mask.js');
 @include('libs/inputmask.min.js');
+@include('functions/mask.js');
 @include('functions/politics.js');
