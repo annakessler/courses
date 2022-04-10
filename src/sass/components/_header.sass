@@ -1,12 +1,6 @@
 .header
 	width: 100%
 
-	&.fixed
-		z-index: 10
-		position: fixed
-		top: 0
-		left: 0
-
 	&__container
 		max-width: 1430px
 		margin: 0px auto
@@ -49,6 +43,9 @@
 			opacity: 0
 			visibility: hidden
 			transition: width .5s
+		&:focus
+			outline: 2px solid $broom
+			outline-offset: 2px
 
 		&--black
 			color: $black
@@ -139,18 +136,6 @@
 
 		&.active
 			left: 0
-
-		// * Стили для плашки фиксированного меню (закомментировать если не нужна фиксипрованная шапка)
-
-		// &::before
-		// 	z-index: 15
-		// 	content: ""
-		// 	position: fixed
-		// 	width: 100%
-		// 	top: 0
-		// 	left: 0
-		// 	height: 70px
-		// 	background-color: #b4b4b4
 
 	.menu__item
 		flex-wrap: wrap

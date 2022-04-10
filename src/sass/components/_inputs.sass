@@ -1,10 +1,12 @@
-.checkbox__item
-	cursor: pointer
-	display: flex
-	align-items: center
-	margin-right: 30px
+.checkbox
 
-	.checkbox__input
+	&__item
+		cursor: pointer
+		display: flex
+		align-items: center
+		margin-right: 30px
+
+	&__input
 		display: none
 
 		&:checked+.fake::before
@@ -38,3 +40,12 @@
 			transform: rotate(35deg)
 			opacity: 0
 			transition: .3s all ease
+
+	&__text
+		margin: 0
+		display: inline-block
+		color: $white
+		opacity: .85
+
+	&__link
+		text-decoration: underline
