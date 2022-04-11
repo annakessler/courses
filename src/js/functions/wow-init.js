@@ -1,1 +1,4 @@
-new WOW().init();
+var wow = new WOW({
+	mobile: false
+});
+wow.init();
