@@ -40,21 +40,21 @@
 
 				<div class="form-inner__form-group">
 					<div class="form-group">
-						<span class="form-name">Ваше имя:</span>
+						<label class="form-name" for="name">Ваше имя:</label>
 						<input type="text" class="form-control" id="name" name="name" placeholder="Введите имя" required
 							autocomplete="off" maxlength="15" minlength="2">
 					</div>
 
 					<div class="form-group">
-						<span class="form-name">Ваш ник в telegram:</span>
+						<label class="form-name" for="username">Ваш ник в telegram:</label>
 						<input type="text" class="form-control form-telegram" id="username" name="username"
 							placeholder="Введите ник" required autocomplete="off" maxlength="33">
 					</div>
 				</div>
 
 				<div class="form-group">
-					<span class="form-name">Ваше сообщение или вопрос:</span>
-					<textarea class="form-text" name="msg" placeholder="Введите сообщение" maxlength="500"></textarea>
+					<label class="form-name" for="msg">Ваше сообщение или вопрос:</label>
+					<textarea class="form-text" id="msg" name="msg" placeholder="Введите сообщение" maxlength="500"></textarea>
 				</div>
 
 				<button type="submit" onclick="AtSign()" class=" btn-reset btn btn--form" name="submit" disabled="">Отправить
@@ -62,7 +62,7 @@
 
 				<div class="checkbox">
 					<label class="checkbox__item">
-						<input type="checkbox" id="politics" onclick="check();" value="" class="checkbox__input">
+						<input class="checkbox__input" type="checkbox" id="politics" onclick="check();" value="">
 						<span class="fake"></span>
 						<span class="checkbox__text">Я даю согласие на
 							<a class="link-reset checkbox__link" href="politics.html" target="_blank">обработку

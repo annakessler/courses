@@ -5,7 +5,9 @@
 .logo
 	z-index: 5
 	display: block
-
+	&:focus
+		outline: 2px solid $broom
+		outline-offset: 2px
 	&__img
 		max-width: 260px
 		height: 70px
@@ -44,6 +46,11 @@
 		border: 2px $broom solid
 		color: $white
 		background-color: transparent
+	&:focus
+		outline: 2px solid $broom
+		outline-offset: 2px
+		background-color: transparent
+		color: $white
 
 .btn
 	margin-right: auto
