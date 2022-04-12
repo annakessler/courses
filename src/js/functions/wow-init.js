@@ -1,4 +1,4 @@
-var wow = new WOW({
-	mobile: false
-});
+wow = new WOW({
+	mobile: false,
+})
 wow.init();
