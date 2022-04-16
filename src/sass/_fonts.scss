@@ -17,5 +17,5 @@ $maxWidth: 1430;
 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
 
-@include font-face("Kazimir", "Kazimir-Black", 700);
-@include font-face("Mediator", "Mediator-Narrow", 500);
+@include font-face("Derold", "Derold", 400);
+@include font-face("Circe", "Circe", 400);
