@@ -1,6 +1,8 @@
 .section
 	padding: 80px 0
 	background-color: $accent-color
+	@media (max-width : 768px)
+		padding: 40px 0
 
 .logo
 	z-index: 5
@@ -19,20 +21,18 @@
 			max-width: 200px
 
 .title
-	max-width: 650px
 	margin: 0
 	margin-bottom: 50px
 	font-family: "Derold", sans-serif
 	text-transform: uppercase
 	letter-spacing: 2px
 	color: $broom
-	+adaptive-font(32, 25)
+	+adaptive-font(32, 28)
 	animation: fadeIn 1s
 	@media (max-width : 768px)
 		text-align: center
 	@media (max-width : 480px)
-		margin-bottom: 15px
-		padding: 20px 0
+		margin-bottom: 25px
 
 .link
 	display: inline-block

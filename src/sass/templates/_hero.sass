@@ -2,6 +2,8 @@
 	min-height: 800px
 	padding-top: 100px
 	background-color: $accent-color
+	@media (max-width: 768px)
+		min-height: 700px
 
 	&__container
 		display: flex
@@ -37,6 +39,7 @@
 		font-family: "Derold", sans-serif
 		text-transform: uppercase
 		letter-spacing: 2px
+		line-height: 1
 		+adaptive-font (70, 32)
 		color: $broom
 		@media	(max-width : 768px)
