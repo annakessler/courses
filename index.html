@@ -4,37 +4,95 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="favicon/favicon.svg" type="image/svg">
+
+	<link rel="icon" href="https://infocoder.ru/favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#222222">
+	<meta name="apple-mobile-web-app-title" content="InfoCoder">
+	<meta name="application-name" content="InfoCoder">
+	<meta name="msapplication-TileColor" content="#222222">
+	<meta name="theme-color" content="#111111">
 
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="theme-color" content="#111111">
-	<title>Info Coder</title>
+	<meta name="keywords"
+		content="марафон по созданию сайтов, курс, веб-разработка, вёрстка сайтов, фриланс, IT, сайты, обучение веб-разработке">
+	<meta name="description"
+		content='Запишись сейчас и с нуля освой создание сайтов на нашем марафоне. На сайте действует акция: "Приведи друга и получи скидку 30%".'>
+	<title>InfoCoder - Обучение веб-разработке</title>
+	<link rel="preload" href="fonts/Derold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/Circe.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" href="css/style.min.css">
+	<script defer src="js/scripts.min.js"></script>
 </head>
 
 <body>
+
+	<script>
+		var fired = false;
+
+		window.addEventListener('scroll', () => {
+			if (fired === false) {
+				fired = true;
+
+				setTimeout(() => {
+					(function (m, e, t, r, i, k, a) {
+						m[i] = m[i] || function () {
+							(m[i].a = m[i].a || []).push(arguments)
+						};
+						m[i].l = 1 * new Date();
+						k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+							.insertBefore(k, a)
+					})(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+					ym(88310051, "init", {
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true,
+						webvisor: true
+					});
+				}, 1000)
+			}
+		});
+	</script>
+
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/88310051" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+
 	<div class="site-container">
-		<header class="header lock-padding" id="header">
-	<div class="header__container">
-		<a class="logo header__logo">
+		<header class="header lock-padding fixed" id="header">
+	<div class="header__container wow">
+		<a href="index.html" class="logo header__logo">
 			<svg class="logo__img">
 				<use href="img/sprite.svg#logo"></use>
 			</svg>
 		</a>
 		<div class="menu header__menu">
-			<button class="burger menu__burger btn-reset">
+			<button class="burger menu__burger btn-reset" aria-label="Открыть меню">
 				<span class="burger__line"></span>
 			</button>
 			<nav class="menu__body">
 				<ul class="menu__list list-reset">
 					<li class="menu__item">
-						<a class="menu__link link-reset" data-goto=".section-1" href="#question">FaQ</a>
+						<a class="menu__link link-reset" data-goto=".what-title" href="#">Что будет</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link link-reset" data-goto=".section-2" href="#">Раздел №2</a>
+						<a class="menu__link link-reset" data-goto=".how-title" href="#">Как проходит</a>
 					</li>
 					<li class="menu__item">
-						<a class="menu__link link-reset" data-goto=".section-3" href="#">Раздел №3</a>
+						<a class="menu__link link-reset" data-goto=".whom-title" href="#">Кому полезно</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link link-reset" data-goto=".modules-title" href="#">Модули</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link link-reset" data-goto=".question-title" href="#">Вопросы</a>
+					</li>
+					<li class="menu__item">
+						<a class="link menu__link menu__link--black link-reset" data-goto=".form-title" href="#"
+							id="button-form">Записаться</a>
 					</li>
 				</ul>
 			</nav>
@@ -42,33 +100,540 @@
 	</div>
 </header>
 		<main class="main">
-			<section class="hero">
+			<section class="hero" id="hero">
 	<div class="container hero__container">
 		<div class="hero__wrap">
-			<div class="hero__card">
-				<h1 class="hero__title">
-					Марафон по&nbsp;вёрстке 1.0
-				</h1>
-				<p class="hero__subtitle">
-					Научишься верстать макеты Figma на&nbsp;HTML и&nbsp;CSS с&nbsp;нуля за&nbsp;10&nbsp;дней
-				</p>
-				<a href="#" class="link-reset hero__link">
-					Записаться
+			<div class="hero__card wow">
+				<div class="hero__text">
+					<h1 class="hero__title">
+						Марафон&nbsp;по веб&#8209;разработке&nbsp;1.0
+					</h1>
+					<p class="hero__subtitle">
+						С&nbsp;нуля научим создавать полноценные сайты и&nbsp;поможем построить карьеру мечты. Даже если
+						до&nbsp;этого&nbsp;Вы не&nbsp;сталкивались с&nbsp;IT.
+					</p>
+				</div>
+				<a href="#form-title" class="link hero__link link-reset">
+					Запишитесь на марафон
 				</a>
 			</div>
-			<div class="hero__img">
-				<img src="img/hero/hero-bg.svg" alt="Dev">
+			<div class="hero__img wow">
+				<img src="img/hero/hero-bg.svg" width="400" height="400" alt="Dev">
 			</div>
 		</div>
 	</div>
 </section>
-			
+			<section class="what section">
+	<div class="container">
+		<h2 class="title wow what-title" id="what-title">Что будет на этом марафоне</h2>
+
+		<div class="what__wrap">
+
+			<div class="what__text wow">
+				<svg class="what__icon">
+					<use href="img/sprite.svg#learning"></use>
+				</svg>
+				<div class="what__inner">
+					<h3 class="what__title">
+						Теория с&nbsp;нуля
+					</h3>
+					<p class="what__descr">
+						Марафон идеально подойдёт новичкам, потому что мы&nbsp;объясним всё с&nbsp;самых азов.
+					</p>
+				</div>
+			</div>
+
+			<div class="what__text wow">
+				<svg class="what__icon">
+					<use href="img/sprite.svg#portfolio"></use>
+				</svg>
+				<div class="what__inner">
+					<h3 class="what__title">
+						Вёрстка сайта для вашего портфолио
+					</h3>
+					<p class="what__descr">
+						На&nbsp;марафоне мы&nbsp;вместе сверстаем первую работу, которую&nbsp;вы сможете добавить к&nbsp;себе
+						в&nbsp;портфолио.
+					</p>
+				</div>
+			</div>
+
+			<div class="what__text wow">
+				<svg class="what__icon">
+					<use href="img/sprite.svg#question"></use>
+				</svg>
+				<div class="what__inner">
+					<h3 class="what__title">
+						Подробно ответим на&nbsp;ваши вопросы
+					</h3>
+					<p class="what__descr">
+						Во&nbsp;время марафона будут проведены трансляции где&nbsp;вы сможете задать вопрос и&nbsp;получить
+						на&nbsp;него ответ.
+					</p>
+				</div>
+			</div>
+
+			<div class="what__text wow">
+				<svg class="what__icon">
+					<use href="img/sprite.svg#link"></use>
+				</svg>
+				<div class="what__inner">
+					<h3 class="what__title">
+						Полезные ссылки
+					</h3>
+					<p class="what__descr">
+						Мы&nbsp;дадим вам ссылки на&nbsp;полезные для веб-разработчика сервисы.
+					</p>
+				</div>
+			</div>
+
+			<div class="what__text wow">
+				<svg class="what__icon">
+					<use href="img/sprite.svg#task"></use>
+				</svg>
+				<div class="what__inner">
+					<h3 class="what__title">
+						Практические задачи
+					</h3>
+					<p class="what__descr">
+						Для закрепления знаний у&nbsp;вас будут практические задачи, которые мы&nbsp;будем проверять и&nbsp;давать
+						по&nbsp;ним
+						обратную связь.
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+			<section class="how section">
+	<div class="container">
+
+		<h2 class="title how-title wow">Как проходит марафон</h2>
+
+		<div class="how-box wow">
+
+			<div class="how__wrap">
+				<p class="how__text">
+					Получаете уроки в телеграм&#8209;канале
+				</p>
+			</div>
+			<div class="how__wrap">
+				<p class="how__text">
+					Просматриваете их&nbsp;и&nbsp;изучаете теорию
+				</p>
+			</div>
+			<div class="how__wrap">
+				<p class="how__text">
+					Выполняете практические задачи
+				</p>
+			</div>
+			<div class="how__wrap">
+				<p class="how__text">
+					Сдаёте их&nbsp;на&nbsp;проверку
+				</p>
+			</div>
+			<div class="how__wrap">
+				<p class="how__text">
+					Получаете обратную связь
+				</p>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+			<section class="whom section">
+	<div class="container">
+		<h2 class="title whom-title wow">Кому будет полезен этот марафон</h2>
+
+		<div class="whom__wrap">
+
+			<div class="whom__text wow">
+				<svg class="whom__icon">
+					<use href="img/sprite.svg#learning"></use>
+				</svg>
+				<div class="whom__inner">
+					<h3 class="whom__title">
+						Абсолютным новичкам
+					</h3>
+					<p class="whom__descr">
+						Вы&nbsp;сможете с&nbsp;нуля освоить веб-разработку и&nbsp;открыть для себя мир IT-технологий. Для этого
+						не&nbsp;нужно никаких знаний в&nbsp;этой сфере, мы&nbsp;возьмём Вас за&nbsp;руку и&nbsp;вместе пройдём этот
+						интересный путь обучения.
+					</p>
+				</div>
+			</div>
+
+			<div class="whom__text wow">
+				<svg class="whom__icon">
+					<use href="img/sprite.svg#money"></use>
+				</svg>
+				<div class="whom__inner">
+					<h3 class="whom__title">
+						Тем, кто хочет хорошо зарабатывать
+					</h3>
+					<p class="whom__descr">
+						Не&nbsp;секрет, что в&nbsp;IT крутятся неплохие деньги, поэтому работать в&nbsp;такой сфере выгодно.
+						Объявление
+						с&nbsp;зарплатой в&nbsp;100 тысяч рублей для большинства является настоящей вакансией мечты. Для айтишника
+						это рядовое
+						предложение о&nbsp;работе с&nbsp;обычной зарплатой для этой сферы.
+					</p>
+				</div>
+			</div>
+
+			<div class="whom__text wow">
+				<svg class="whom__icon">
+					<use href="img/sprite.svg#home"></use>
+				</svg>
+				<div class="whom__inner">
+					<h3 class="whom__title">
+						Если вы&nbsp;хотите стать фрилансером
+					</h3>
+					<p class="whom__descr">
+						Фриланс безусловно имеет множество плюсов, один из&nbsp;них&nbsp;&mdash; это&nbsp;то, что для заработка
+						необязательно посещать офис каждый день и&nbsp;вставать в&nbsp;7&nbsp;утра. А&nbsp;IT-специалисты,
+						одни
+						из&nbsp;самых востребованных сотрудников на&nbsp;фрилансе.
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+			<section class="modules section">
+	<div class="container">
+		<h2 class="title modules-title wow">
+			Модули
+		</h2>
+		<div class="tabs">
+			<div class="tabs__header wow">
+				<button class="tabs__header-item wow active btn-reset" type="button">Модуль 0</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 1</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 2</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 3</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 4</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 5</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 6</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 7</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 8</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 9</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 10</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 11</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 12</button>
+				<button class="tabs__header-item wow btn-reset" type="button">Модуль 13</button>
+			</div>
+			<div class="tabs__content wow">
+				<div class="tabs__content-item tab1">
+					<h3 class="tabs__content-title">
+						Вступительный модуль
+					</h3>
+					<p class="tabs__content-text">Расскажем как будет проходить марафон, установим и&nbsp;настроим нужные
+						программы
+						и&nbsp;плагины.</p>
+				</div>
+				<div class="tabs__content-item tab2">
+					<h3 class="tabs__content-title">
+						HTML-разметка
+					</h3>
+					<p class="tabs__content-text">Начинать изучение веб-разработки необходимо конечно&nbsp;же
+						с&nbsp;HTML-разметки.
+						В&nbsp;этом модуле вы&nbsp;изучите теорию, синтаксис, а&nbsp;также познакомитесь со&nbsp;всеми стандартными,
+						часто используемыми HTML-тегами и&nbsp;атрибутами для них.</p>
+				</div>
+				<div class="tabs__content-item tab3">
+					<h3 class="tabs__content-title">
+						CSS-оформление
+					</h3>
+					<p class="tabs__content-text">Для того чтобы стилизовать сайт используют CSS. В&nbsp;этом модуле
+						вы&nbsp;узнаете
+						что такое каскадная таблица стилей, изучите её&nbsp;синтаксис, познакомитесь с&nbsp;селекторами и&nbsp;всеми
+						основными свойствами для них.</p>
+				</div>
+				<div class="tabs__content-item tab4">
+					<h3 class="tabs__content-title">
+						Дизайн-макеты
+					</h3>
+					<p class="tabs__content-text">Не&nbsp;секрет, что разработчики верстают не&nbsp;из&nbsp;головы,
+						а&nbsp;по&nbsp;дизайн-макетам, в&nbsp;этом модуле вы&nbsp;научитесь доставать всю необходимую информацию
+						из&nbsp;макета для вашей вёрстки, узнаете всё необходимое о&nbsp;форматах изображений, как с&nbsp;ними
+						работать
+						и&nbsp;подключите шрифт на&nbsp;свой сайт.</p>
+				</div>
+				<div class="tabs__content-item tab5">
+					<h3 class="tabs__content-title">
+						Блочная модель, FlexBox и&nbsp;позиционирование
+					</h3>
+					<p class="tabs__content-text">В&nbsp;этом модуле вы&nbsp;узнаете, как грамотно управлять шириной, высотой,
+						позиционированием блоков на&nbsp;странице, задавать отступы и&nbsp;гибко размещать блоки на&nbsp;сайте.</p>
+				</div>
+				<div class="tabs__content-item tab6">
+					<h3 class="tabs__content-title">
+						Хостинг и&nbsp;домен
+					</h3>
+					<p class="tabs__content-text">
+						Пока ваши проекты доступны только локально на&nbsp;вашем компьютере, из&nbsp;этого модуля вы&nbsp;узнаете,
+						всю
+						необходимую информацию, для того чтобы разместить их в&nbsp;интернете.
+					</p>
+				</div>
+				<div class="tabs__content-item tab7">
+					<h3 class="tabs__content-title">
+						Адаптивная вёрстка
+					</h3>
+					<p class="tabs__content-text">Для того, чтобы ваш сайт хорошо смотрелся не&nbsp;только на&nbsp;мониторах,
+						но&nbsp;и&nbsp;с&nbsp;мобильных устройств, необходимо прописать в&nbsp;ваш CSS-код медиа-запросы.
+						В&nbsp;этом
+						модуле вы&nbsp;узнаете что это такое и&nbsp;как ими пользоваться.</p>
+				</div>
+				<div class="tabs__content-item tab8">
+					<h3 class="tabs__content-title">
+						Git
+					</h3>
+					<p class="tabs__content-text">Познакомимся с&nbsp;сервисом GitHub и&nbsp;системой управления версиями Git.</p>
+				</div>
+				<div class="tabs__content-item tab9">
+					<h3 class="tabs__content-title">
+						Ускорение работы
+					</h3>
+					<p class="tabs__content-text">Вы&nbsp;узнаете о&nbsp;том, как автоматизировать некоторые процессы
+						веб-разработки,
+						писать быстрый, понятный и&nbsp;легко читаемый код, а&nbsp;также использовать препроцессор для CSS, который
+						может
+						похвастаться большим количеством возможностей.</p>
+				</div>
+				<div class="tabs__content-item tab10">
+					<h3 class="tabs__content-title">
+						Псевдоэлементы и&nbsp;псевдоклассы
+					</h3>
+					<p class="tabs__content-text">Расскажем про различные состояния элементов и&nbsp;как их&nbsp;стилизовать.</p>
+				</div>
+				<div class="tabs__content-item tab11">
+					<h3 class="tabs__content-title">
+						JavaScript
+					</h3>
+					<p class="tabs__content-text">Вместе изучим основы языка программирования JavaScript и&nbsp;используем его для
+						практических задач на&nbsp;сайте.</p>
+				</div>
+				<div class="tabs__content-item tab12">
+					<h3 class="tabs__content-title">
+						Отправка форм
+					</h3>
+					<p class="tabs__content-text">В этом модуле вы сверстаете и подключите форму для обратной связи на вашем
+						сайте.
+					</p>
+				</div>
+				<div class="tabs__content-item tab13">
+					<h3 class="tabs__content-title">
+						CSS-анимация
+					</h3>
+					<p class="tabs__content-text">Вы&nbsp;узнаете как прописывать CSS-анимацию, а&nbsp;также как использовать
+						библиотеку с&nbsp;уже готовыми анимациями.</p>
+				</div>
+				<div class="tabs__content-item tab14">
+					<h3 class="tabs__content-title">
+						Оптимизация скорости сайта
+					</h3>
+					<p class="tabs__content-text">Оптимизируем работу своего сайта на&nbsp;хостинге.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="question section">
+	<div class="container">
+		<h2 class="title question-title wow">
+			Ответы на часто задаваемые вопросы
+		</h2>
+		<div data-spollers data-one-spoller class="spollers">
+			<div class="spollers__item wow">
+				<button tabindex="-1" type="button" data-spoller class="spollers__title btn-reset"><span>Кто мы?
+					</span></button>
+				<div class="spollers__text">
+					Мы&nbsp;обыкновенные фрилансеры, которые в&nbsp;своё время обучались и&nbsp;проходили курсы, мы&nbsp;знаем
+					насколько дорогими они бывают, поэтому хотим сделать обучение более доступным.
+				</div>
+			</div>
+			<div class="spollers__item wow">
+				<button tabindex="-1" type="button" data-spoller class="spollers__title btn-reset">Почему мы?
+				</button>
+				<div class="spollers__text">
+					Не&nbsp;секрет, что вся информация для обучения есть на&nbsp;просторах интернета и&nbsp;бесплатно,
+					но&nbsp;проблема
+					её&nbsp;заключается в&nbsp;том, что вы&nbsp;не&nbsp;знаете с&nbsp;чего начать и&nbsp;как продолжать обучаться.
+					Мы&nbsp;дадим вам СТРУКТУРИРОВАННУЮ базу знаний, которая поможет обучаться постепенно, не&nbsp;хватая лишнего
+					и&nbsp;не&nbsp;пропуская важного. Мы&nbsp;подробно объясним каждую тему и&nbsp;ответим на&nbsp;ваши вопросы.
+				</div>
+			</div>
+			<div class="spollers__item wow">
+				<button tabindex="-1" type="button" data-spoller class="spollers__title btn-reset"><span>Почему стоит записаться
+						сейчас?
+					</span></button>
+				<div class="spollers__text">
+					Это наш первый марафон, первый поток которого будет проводиться на&nbsp;самых выгодных условиях.
+					На&nbsp;данный момент мы&nbsp;считаем это нашим конкурентым преимуществом.
+				</div>
+			</div>
+			<div class="spollers__item wow">
+				<button tabindex="-1" type="button" data-spoller class="spollers__title btn-reset">Будут&nbsp;ли розыгрыши
+					на&nbsp;нашем
+					марафоне?</button>
+				<div class="spollers__text">
+					Конечно! Среди участников марафона, мы&nbsp;проведём розыгрыш, приз которого будет на&nbsp;выбор победителя:
+					беспроводные наушники, фитнес-браслет или портативная зарядка.
+				</div>
+			</div>
+			<div class="spollers__item wow">
+				<button tabindex="-1" type="button" data-spoller class="spollers__title btn-reset">Какие бонусы будут
+					на&nbsp;этом
+					марафоне?</button>
+				<div class="spollers__text">
+					Всем участникам, оставившим видеоотзыв этого марафона, будет доступна скидка на&nbsp;все последующие курсы
+					в&nbsp;20%.
+				</div>
+			</div>
+			<div class="spollers__item wow">
+				<button tabindex="-1" type="button" data-spoller class="spollers__title btn-reset">Сколько часов в&nbsp;день мне
+					нужно
+					будет уделять учёбе?</button>
+				<div class="spollers__text">
+					Всё зависит только от&nbsp;вас. В&nbsp;начале учебной недели задачи не&nbsp;будут сложными и&nbsp;потребуют
+					не&nbsp;много времени на
+					их&nbsp;выполнение. Далее в&nbsp;среднем вам понадобится от&nbsp;1&nbsp;до&nbsp;4&nbsp;часов в&nbsp;день.
+				</div>
+			</div>
+			<div class="spollers__item wow">
+				<button tabindex="-1" type="button" data-spoller class="spollers__title btn-reset">Могу&nbsp;ли
+					я&nbsp;посмотреть
+					уроки в
+					другой день?</button>
+				<div class="spollers__text">
+					Да, уроки не&nbsp;обязательно смотреть строго каждый день, но&nbsp;для хорошего усвоения материала, лучше их
+					не&nbsp;пропускать.
+				</div>
+			</div>
+			<div class="spollers__item wow">
+				<button tabindex="-1" type="button" data-spoller class="spollers__title btn-reset">Нужно&nbsp;ли заранее
+					устанавливать какие-либо программы?</button>
+				<div class="spollers__text">
+					Нет, на&nbsp;первом уроке мы&nbsp;расскажем про нужные программы и&nbsp;плагины.
+				</div>
+			</div>
+			<div class="spollers__item wow">
+				<button tabindex="-1" type="button" data-spoller class="spollers__title btn-reset">Нужно&nbsp;ли мне иметь
+					какие-то
+					знания заранее?</button>
+				<div class="spollers__text">
+					Нет, это не&nbsp;обязательно. Наш марафон подойдёт новичкам, так как мы&nbsp;объясним всё с&nbsp;нуля.
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="form section">
+	<div class="container">
+
+		<h2 class="title form-title wow" id="form-title">Запишитесь или получите консультацию</h2>
+
+		<div class="form__wrap">
+
+			<div class="info">
+
+				<div class="info__wrap wow">
+					<div class="info__inner">
+						<p class="info__descr">
+							Старт - <span class="info__descr info__descr--accent">1 мая</span>
+						</p>
+						<p class="info__descr">
+							Старая цена - <span class="info__descr info__descr--accent info__descr--sale">5.000</span>
+						</p>
+						<p class="info__descr">
+							Цена со скидкой - <span class="info__descr info__descr--accent">3.000</span>
+						</p>
+						<p class="info__descr">
+							Длительность <span class="info__descr info__descr--accent">~1.5 месяца</span>
+						</p>
+					</div>
+
+					<div class="info__inner">
+						<p class="info__limit">
+							Скидка действует <span class="info__limit info__limit--accent">до 25 апреля</span>
+						</p>
+						<p class="info__limit">
+							Количество мест <span class="info__limit info__limit--accent">ограничено</span>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+
+			<form class="form-inner wow" action="telegram.php" method="POST">
+
+				<div class="form-inner__form-group">
+					<div class="form-group">
+						<label class="form-name" for="name">Ваше имя:</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Введите имя" required
+							autocomplete="off" maxlength="15" minlength="2">
+					</div>
+
+					<div class="form-group">
+						<label class="form-name" for="username">Ваш ник в telegram:</label>
+						<input type="text" class="form-control form-telegram" id="username" name="username"
+							placeholder="Введите ник" required autocomplete="off" maxlength="33">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="form-name" for="msg">Ваше сообщение или вопрос:</label>
+					<textarea class="form-text" id="msg" name="msg" placeholder="Введите сообщение" maxlength="500"></textarea>
+				</div>
+
+				<button type="submit" onclick="AtSign()" class=" btn-reset btn btn--form" name="submit" disabled="">Отправить
+					форму</button>
+
+				<div class="checkbox">
+					<label class="checkbox__item">
+						<input class="checkbox__input" type="checkbox" id="politics" onclick="check();" value="">
+						<span class="fake"></span>
+						<span class="checkbox__text">Я даю согласие на
+							<a class="link-reset checkbox__link" href="politics.html" target="_blank">обработку
+								персональных
+								данных.</a></span>
+					</label>
+				</div>
+
+
+			</form>
+
+		</div>
+	</div>
+
+</section>
 		</main>
 		<footer class="footer">
-	<div class="container"></div>
+	<div class="container footer__container">
+
+		<div class="footer__wrap wow">
+			<span class="footer__info">
+				&#169; InfoCoder, 2022
+			</span>
+
+			<a href="#header" class="logo footer__logo">
+				<svg class="logo__img">
+					<use href="img/sprite.svg#logo"></use>
+				</svg>
+			</a>
+
+			<a href="https://infocoder.ru/politics.html" target="_blank" class="footer__info footer__link link-reset">
+				Политика конфиденциальности
+			</a>
+		</div>
+	</div>
 </footer>
 	</div>
-	<script src="js/scripts.min.js"></script>
 </body>
 
 </html>
