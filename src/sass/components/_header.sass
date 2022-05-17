@@ -1,7 +1,6 @@
 .header
 	width: 100%
 	min-height: 70px
-	transition: .5s
 
 	&.fixed
 		z-index: 10
@@ -20,7 +19,6 @@
 		min-height: 70px
 		width: 100%
 		animation: fadeInDown 1s
-		transition: .5s
 		&.fixed-active
 			padding: 5px 15px
 
@@ -45,9 +43,7 @@
 		position: relative
 		color: $broom
 		+adaptive-font(18, 16)
-		transition: color .2s
-		transition: background-color .2s
-		transition: font-size .2s
+		transition: all .2s
 
 		&::after
 			position: absolute
@@ -67,7 +63,6 @@
 
 		&--black
 			color: $black
-			transition: padding .2s
 			&:hover
 				&::after
 					display: none
