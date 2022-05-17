@@ -17,17 +17,21 @@
 		fill: $broom
 		cursor: pointer
 		transition: all .2s
+		&--scroll
+			max-width: 230px
 		@media (max-width: 992px)
 			max-width: 200px
 
 .title
 	margin: 0
 	margin-bottom: 50px
+	margin-top: -80px
+	padding-top: 100px
 	font-family: "Derold", sans-serif
 	text-transform: uppercase
 	letter-spacing: 2px
 	color: $broom
-	+adaptive-font(32, 28)
+	+adaptive-font(40, 28)
 	animation: fadeIn 1s
 	@media (max-width : 768px)
 		text-align: center
@@ -74,6 +78,9 @@
 		padding: 15px 60px
 		@media (max-width : 768px)
 			width: 100%
+
+	&--scroll
+		padding: 10px 15px
 
 @keyframes neon
 	from

@@ -1,79 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+			rel="icon"
+			href="https://infocoder.ru/favicon.svg"
+			type="image/svg+xml"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="favicons/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="favicons/safari-pinned-tab.svg"
+			color="#222222"
+		/>
+		<meta name="apple-mobile-web-app-title" content="InfoCoder" />
+		<meta name="application-name" content="InfoCoder" />
+		<meta name="msapplication-TileColor" content="#222222" />
+		<meta name="theme-color" content="#111111" />
 
-	<link rel="icon" href="https://infocoder.ru/favicon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-	<link rel="manifest" href="favicons/site.webmanifest">
-	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#222222">
-	<meta name="apple-mobile-web-app-title" content="InfoCoder">
-	<meta name="application-name" content="InfoCoder">
-	<meta name="msapplication-TileColor" content="#222222">
-	<meta name="theme-color" content="#111111">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta
+			name="keywords"
+			content="курс по созданию сайтов, курс, веб-разработка, вёрстка сайтов, фриланс, IT, сайты, обучение веб-разработке"
+		/>
+		<meta
+			name="description"
+			content='Запишись сейчас и с нуля освой создание сайтов на нашем курсе. На сайте действует акция: "Приведи друга и получи скидку 30%".'
+		/>
+		<title>InfoCoder - Обучение веб-разработке</title>
+		<link
+			rel="preload"
+			href="fonts/Derold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="fonts/Circe.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<script defer src="js/scripts.min.js"></script>
+		<script src="//st.yagla.ru/js/y.c.js?h=85adf69f7a222681d60579cfd93648b2"></script>
+	</head>
 
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="keywords"
-		content="марафон по созданию сайтов, курс, веб-разработка, вёрстка сайтов, фриланс, IT, сайты, обучение веб-разработке">
-	<meta name="description"
-		content='Запишись сейчас и с нуля освой создание сайтов на нашем марафоне. На сайте действует акция: "Приведи друга и получи скидку 30%".'>
-	<title>InfoCoder - Обучение веб-разработке</title>
-	<link rel="preload" href="fonts/Derold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="fonts/Circe.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="stylesheet" href="css/style.min.css">
-	<script defer src="js/scripts.min.js"></script>
-</head>
+	<body>
+		<script>
+			var fired = false;
 
-<body>
+			window.addEventListener("scroll", () => {
+				if (fired === false) {
+					fired = true;
 
-	<script>
-		var fired = false;
+					setTimeout(() => {
+						(function (m, e, t, r, i, k, a) {
+							m[i] =
+								m[i] ||
+								function () {
+									(m[i].a = m[i].a || []).push(arguments);
+								};
+							m[i].l = 1 * new Date();
+							(k = e.createElement(t)),
+								(a = e.getElementsByTagName(t)[0]),
+								(k.async = 1),
+								(k.src = r),
+								a.parentNode.insertBefore(k, a);
+						})(
+							window,
+							document,
+							"script",
+							"https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js",
+							"ym"
+						);
+						ym(88310051, "init", {
+							clickmap: true,
+							trackLinks: true,
+							accurateTrackBounce: true,
+							webvisor: true,
+						});
+					}, 1000);
+				}
+			});
+		</script>
 
-		window.addEventListener('scroll', () => {
-			if (fired === false) {
-				fired = true;
+		<noscript>
+			<div>
+				<img
+					src="https://mc.yandex.ru/watch/88310051"
+					style="position: absolute; left: -9999px"
+					alt=""
+				/>
+			</div>
+		</noscript>
 
-				setTimeout(() => {
-					(function (m, e, t, r, i, k, a) {
-						m[i] = m[i] || function () {
-							(m[i].a = m[i].a || []).push(arguments)
-						};
-						m[i].l = 1 * new Date();
-						k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
-							.insertBefore(k, a)
-					})(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
-					ym(88310051, "init", {
-						clickmap: true,
-						trackLinks: true,
-						accurateTrackBounce: true,
-						webvisor: true
-					});
-				}, 1000)
-			}
-		});
-	</script>
-
-	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/88310051" style="position:absolute; left:-9999px;" alt="" /></div>
-	</noscript>
-
-	<div class="site-container">
-		@include('templates/header.html')
-		<main class="main">
-			@include('templates/hero.html')
-			@include('templates/what.html')
-			@include('templates/how.html')
-			@include('templates/whom.html')
-			@include('templates/modules.html')
-			@include('templates/question.html')
-			@include('templates/form.html')
-		</main>
-		@include('templates/footer.html')
-	</div>
-</body>
-
+		<div class="site-container">
+			@include('templates/header.html')
+			<main class="main">
+				@include('templates/hero.html') @include('templates/what.html')
+				@include('templates/how.html') @include('templates/whom.html')
+				@include('templates/modules.html') @include('templates/question.html')
+				@include('templates/form.html')
+			</main>
+			@include('templates/footer.html')
+		</div>
+	</body>
 </html>
