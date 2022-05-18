@@ -1,5 +1,10 @@
 .timer
-	background-color: #282828
+	background-color: $accent-color
+	padding: 60px 0
+
+	&-title
+		padding-top: 20px
+		margin: -80px 0px 70px
 
 	&__wrap
 		display: flex
@@ -13,16 +18,18 @@
 		width: 200px
 		height: 200px
 		border-radius: 50%
-		background-color: $accent-color
+		box-shadow: 0px 0px 15px 0px $broom
+		background-color: #282828
+		animation: fadeInUp 1s
 
 		&__time
 			color: $white
 			line-height: 130%
 			margin-bottom: 15px
-			+adaptive-font(25, 20)
+			+adaptive-font(40, 23)
 
 		&__text
 			color: $white
 			opacity: .85
 			line-height: 130%
-			+adaptive-font(18, 16)
+			+adaptive-font(20, 16)
