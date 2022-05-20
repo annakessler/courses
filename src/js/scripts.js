@@ -8,3 +8,5 @@
 @include('libs/inputmask.min.js');
 @include('functions/mask.js');
 @include('functions/politics.js');
+@include('libs/cookie.min.js');
+@include('functions/cookie.js');
