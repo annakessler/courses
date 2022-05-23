@@ -2,13 +2,13 @@ const cookieEl = document.querySelector(".cookie");
 const okEl = document.querySelector(".cookie__accept");
 
 okEl.addEventListener("click", () => {
-	cookieEl.style.display = "none";
+	cookieEl.classList.remove("cookie--show");
 });
 
 let cookies = () => {
 	if (!Cookies.get("hide-cookie")) {
 		setTimeout(() => {
-			cookieEl.style.display = "block";
+			cookieEl.classList.add("cookie--show");
 		}, 1000);
 	}
 

@@ -1,5 +1,4 @@
 .cookie
-	display: none
 	z-index: 30
 	position: fixed
 	bottom: 20px
@@ -7,10 +6,12 @@
 	max-width: 500px
 	height: auto
 	padding: 15px 20px
+	transform: translateX(150%)
 	border-radius: 15px
 	background-color: #282828
 	box-shadow: 0px 0px 20px 5px rgba(16, 16, 16, 0.35)
 	color: $white
+	transition: all .6s
 	@media (max-width : 768px)
 		bottom: 10px
 		left: 30px
@@ -31,3 +32,6 @@
 		&:hover
 			background-color: $broom
 			color: $black
+	&--show
+		transform: translateX(0)
+		transition: all 1s
