@@ -31,10 +31,32 @@
 		text-align: right
 		transition: opacity .3s
 		&:hover
-			opacity: 0.85
+			opacity: 0.6
 		&:focus
 			outline: 2px solid $broom
 			outline-offset: 2px
 		@media (max-width: 992px)
 			text-align: center
 			margin-bottom: 15px
+
+	&__links
+		display: flex
+		flex-direction: column
+
+	&__socials
+		display: flex
+		justify-content: flex-end
+		margin-bottom: 7px
+		gap: 15px
+		@media (max-width : 992px)
+			justify-content: center
+
+	&__social
+		fill: $broom
+		width: 40px
+		height: 40px
+		transition: opacity .3s
+		gap: 10px
+
+		&:hover
+			opacity: 0.6
