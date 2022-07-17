@@ -23,6 +23,7 @@
 				gap: 0
 
 	&-group
+		position: relative
 		width: 100%
 		margin-bottom: 20px
 
@@ -58,6 +59,12 @@
 		resize: none
 		width: 100%
 		min-height: 150px
+
+.js-validate-error-label
+	position: absolute
+	top: 0
+	right: 0
+	+adaptive-font (18, 16)
 
 .btn--form
 	margin-bottom: 20px

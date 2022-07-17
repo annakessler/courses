@@ -5,8 +5,8 @@
 @include('functions/tabs.js');
 @include('functions/spollers.js');
 @include('functions/timer.js');
-@include('libs/inputmask.min.js');
-@include('functions/mask.js');
+@include('libs/just-validate.min.js');
+@include('functions/validate.js');
 @include('functions/politics.js');
 @include('libs/cookie.min.js');
 @include('functions/cookie.js');
